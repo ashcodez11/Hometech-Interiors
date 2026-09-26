@@ -1,0 +1,177 @@
+---
+title: Contact Hometech Interiors — Saidapet, Chennai
+description: Call 08460229951 or send an enquiry to Hometech Interiors, Saidapet, Chennai. Modular kitchens, wardrobes, false ceilings and interior works.
+navKey: contact
+schema: [contact, breadcrumb]
+priority: 0.9
+changefreq: monthly
+---
+{{> head}}
+{{> header}}
+
+<main id="main">
+
+  <section class="masthead" aria-labelledby="page-title">
+    <div class="masthead__media" aria-hidden="true">
+      <img src="assets/img/interior-dining.svg" alt="" width="1600" height="1000" decoding="async">
+    </div>
+    <div class="shell masthead__inner">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li aria-current="page">Contact</li>
+        </ol>
+      </nav>
+      <p class="eyebrow">Let&rsquo;s design your next space</p>
+      <h1 id="page-title">Contact Hometech Interiors</h1>
+      <p class="lede">
+        Tell us about your home or your space. Call, send a WhatsApp message or use the enquiry form —
+        whichever is easiest for you.
+      </p>
+      <div class="masthead__actions btn-row">
+        <a class="btn btn--primary" href="{{site.phoneHref}}">Call {{site.phoneDisplay}}</a>
+        <a class="btn btn--ghost-light" href="{{site.waHref}}" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================== form + details -->
+  <section class="section" id="enquiry" aria-labelledby="enquiry-title">
+    <div class="shell">
+      <div class="contact-grid contact-grid--form-first">
+
+        <div data-reveal>
+          <div class="section-head" style="margin-bottom:1.75rem">
+            <p class="eyebrow">Enquiry form</p>
+            <h2 id="enquiry-title">Request a consultation.</h2>
+            <p class="lede">Share a few details and we will get back to you about your space.</p>
+          </div>
+          <div class="contact-card">
+            {{> enquiry-form}}
+          </div>
+        </div>
+
+        <div data-reveal data-reveal-delay="80">
+          <div class="contact-card contact-card--ink">
+            <p class="eyebrow">Hometech Interiors</p>
+            <ul class="contact-rows">
+              <li>
+                <span class="contact-rows__label">Phone</span>
+                <span class="contact-rows__value"><a href="{{site.phoneHref}}">{{site.phoneDisplay}}</a></span>
+                <span class="contact-rows__note">Call during business hours for the quickest reply.</span>
+              </li>
+              <li>
+                <span class="contact-rows__label">WhatsApp</span>
+                <span class="contact-rows__value"><a href="{{site.waHref}}" target="_blank" rel="noopener">Message us on WhatsApp</a></span>
+                <span class="contact-rows__note">Send photos or a rough sketch of the space if you have them.</span>
+              </li>
+              <li>
+                <span class="contact-rows__label">Address</span>
+                <span class="contact-rows__value">{{site.legalName}}<br>{{site.address.street}}<br>{{site.addressFull}}</span>
+                <span class="contact-rows__note"><a href="{{site.mapHref}}" target="_blank" rel="noopener">Open in Google Maps</a></span>
+              </li>
+              <li>
+                <span class="contact-rows__label">Instagram</span>
+                <span class="contact-rows__value"><a href="{{site.instagram.url}}" target="_blank" rel="noopener">{{site.instagram.handle}}</a></span>
+                <span class="contact-rows__note">Recent interior work is shared here.</span>
+              </li>
+              <li>
+                <span class="contact-rows__label">Justdial listing</span>
+                <span class="contact-rows__value"><a href="{{site.justdial.url}}" target="_blank" rel="noopener">{{site.justdial.rating}} / 5 &middot; {{site.justdial.ratingCount}} ratings</a></span>
+                <span class="contact-rows__note">Independent listing on Justdial.</span>
+              </li>
+              <li>
+                <span class="contact-rows__label">Business categories</span>
+                <span class="contact-rows__value">Interior Decorators<br>False Ceiling Contractors</span>
+              </li>
+            </ul>
+
+            <div class="contact-actions">
+              <a class="btn btn--primary btn--block" href="{{site.phoneHref}}">Call Now</a>
+              <a class="btn btn--white btn--block" href="{{site.waHref}}" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================== location -->
+  <section class="section section--paper2" aria-labelledby="map-title">
+    <div class="shell">
+      <div class="split split--top">
+        <div data-reveal>
+          <p class="eyebrow">Find us</p>
+          <h2 id="map-title">Based in Saidapet, Chennai.</h2>
+          <p style="color:var(--text-soft)">
+            Hometech Interiors works from Saidapet, near Aranganathan Subway in Kaveri Nagar, and takes
+            on interior work across Chennai. If you would like to discuss a space, get in touch first —
+            we can talk through the requirements before arranging anything in person.
+          </p>
+          <div class="btn-row">
+            <a class="btn btn--ink btn--sm" href="{{site.mapHref}}" target="_blank" rel="noopener">Open in Google Maps</a>
+            <a class="btn btn--ghost btn--sm" href="services.html">View services</a>
+          </div>
+        </div>
+
+        <div class="map-card" data-reveal data-reveal-delay="80">
+          <div class="map-card__frame">
+            <p class="map-card__fallback">
+              <span>Map preview</span>
+              <span>Saidapet, Chennai</span>
+            </p>
+            <iframe
+              src="{{site.mapEmbed}}"
+              title="Map showing the location of Hometech Interiors in Saidapet, Chennai"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="map-card__body">
+            <p><strong>{{site.legalName}}</strong><br>{{site.address.street}}<br>{{site.addressFull}}</p>
+            <p class="demo-note">The map is loaded from Google Maps. If it does not appear, the address above links directly to the listing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================== quick answers -->
+  <section class="section" aria-labelledby="q-title">
+    <div class="shell shell--narrow">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Useful to know</p>
+        <h2 id="q-title">Before you call.</h2>
+      </div>
+      <div class="faq" data-reveal>
+        <details class="faq__item">
+          <summary class="faq__q">What should I have ready when I get in touch?<span class="faq__sign" aria-hidden="true"></span></summary>
+          <div class="faq__a">
+            <p>The room you want to work on, roughly what you would like done, and any photographs or measurements you already have. None of it is compulsory — it simply helps the conversation move faster.</p>
+          </div>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__q">Which services can I ask about?<span class="faq__sign" aria-hidden="true"></span></summary>
+          <div class="faq__a">
+            <p>Modular kitchens, wardrobes, false ceilings and interior works. If your requirement spans more than one of these, mention it — they are often planned together.</p>
+          </div>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__q">What happens after I send the form?<span class="faq__sign" aria-hidden="true"></span></summary>
+          <div class="faq__a">
+            <p>On this demonstration site the form prepares your enquiry as a WhatsApp message so nothing is stored on a server. On the live site the enquiry would reach Hometech Interiors directly.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+{{> cta-band}}
+{{> footer}}
+{{> action-bar}}
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

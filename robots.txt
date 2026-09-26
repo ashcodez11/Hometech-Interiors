@@ -1,0 +1,5 @@
+# Hometech Interiors — https://www.hometechinteriors.in
+User-agent: *
+Allow: /
+
+Sitemap: https://www.hometechinteriors.in/sitemap.xml

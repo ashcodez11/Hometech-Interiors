@@ -1,0 +1,52 @@
+{
+  "baseUrl": "https://www.hometechinteriors.in",
+  "contentDate": "2026-09-25",
+  "name": "Hometech Interiors",
+  "legalName": "HOMETECH INTERIORS",
+  "wordmark": "HOMETECH",
+  "wordmarkAlt": "Interiors",
+  "logo": "assets/img/hometech-logo.jpeg",
+  "logoAlt": "Hometech Interiors logo",
+  "tagline": "Your Thought. Our Design.",
+  "taglineRaw": "Your Thought Our Design",
+  "blurb": "Interior solutions designed around the way you live.",
+  "yearsInBusiness": "22",
+  "phoneDisplay": "08460229951",
+  "phoneDial": "+918460229951",
+  "whatsapp": "918460229951",
+  "email": "",
+  "address": {
+    "street": "Near Aranganathan Subway, Kaveri Nagar",
+    "locality": "Saidapet",
+    "region": "Chennai, Tamil Nadu",
+    "country": "India",
+    "full": "Saidapet, Chennai, Tamil Nadu, India",
+    "areaServed": [
+      "Saidapet",
+      "Kaveri Nagar",
+      "West Saidapet",
+      "T. Nagar",
+      "Guindy",
+      "Adyar",
+      "Velachery",
+      "Ashok Nagar",
+      "Kodambakkam",
+      "Mylapore",
+      "Chennai"
+    ]
+  },
+  "instagram": {
+    "handle": "@hometechinteriorschennai",
+    "url": "https://www.instagram.com/hometechinteriorschennai/"
+  },
+  "justdial": {
+    "url": "https://www.justdial.com/Chennai/Hometech-Interiors-Near-Aranganathan-Subway-Kaveri-Nagar-Saidapet/044PXX44-XX44-121011112828-G2R6_BZDET",
+    "rating": "3.8",
+    "ratingCount": "17"
+  },
+  "categories": ["Interior Decorators", "False Ceiling Contractors"],
+  "ogImage": "assets/img/og-hometech-interiors.png",
+  "ogImageAlt": "Hometech Interiors — interior design and interior works in Saidapet, Chennai",
+  "themeColor": "#0B1622",
+  "locale": "en_IN"
+}
