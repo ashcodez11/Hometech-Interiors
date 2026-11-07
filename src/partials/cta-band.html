@@ -5,8 +5,13 @@
   <div class="shell cta-band__inner">
     <div data-reveal>
       <p class="eyebrow">Start a conversation</p>
-      <h2 id="final-cta-title">LET&rsquo;S DESIGN<br>YOUR NEXT SPACE.</h2>
-      <p class="lede">Tell us about your home, your space or your plans. Call, message on WhatsApp or request a consultation and we will take it from there.</p>
+      <h2 id="final-cta-title">Let&rsquo;s Design<br>Your Space.</h2>
+      <p class="lede">Home interiors, kitchens, wardrobes, false ceilings and complete interior works — tell us about your space and we will take it from there.</p>
+      <ul class="cta-band__list">
+        <li><a href="{{site.phoneHref}}"><span>Call</span><strong>{{site.phoneDisplay}}</strong></a></li>
+        <li><a href="{{site.waHref}}" target="_blank" rel="noopener"><span>WhatsApp</span><strong>{{site.phoneDisplay}}</strong></a></li>
+        <li><a href="mailto:{{site.email}}"><span>Email</span><strong>{{site.email}}</strong></a></li>
+      </ul>
     </div>
     <div class="cta-band__aside" data-reveal data-reveal-delay="90">
       <a class="btn btn--primary" href="{{site.phoneHref}}">
@@ -17,11 +22,10 @@
         <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 1.8c2.17 0 4.2.84 5.73 2.38a8.06 8.06 0 0 1 2.38 5.73c0 4.47-3.64 8.11-8.12 8.11a8.2 8.2 0 0 1-4.14-1.13l-.3-.18-3.11.82.83-3.04-.19-.31a8.05 8.05 0 0 1-1.24-4.27c0-4.47 3.64-8.11 8.16-8.11Zm-3.4 4.1c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02s.87 2.34 1 2.5c.12.16 1.7 2.7 4.16 3.7 2.05.83 2.46.66 2.9.62.44-.04 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.01-.37-1.93-1.19-.71-.63-1.19-1.42-1.33-1.66-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.17-.4-.35-.4-.48-.4h-.42Z"/></svg>
         WhatsApp
       </a>
-      <a class="btn btn--white" href="contact.html#enquiry">Get a Consultation</a>
+      <a class="btn btn--white" href="contact.html#enquiry">Start a Project</a>
       <p class="cta-band__meta">
         {{site.legalName}} &middot; {{site.addressFull}}<br>
-        <a href="{{site.phoneHref}}">{{site.phoneDisplay}}</a> &middot;
-        <a href="{{site.instagram.url}}" target="_blank" rel="noopener">{{site.instagram.handle}}</a>
+        <a href="mailto:{{site.email}}">{{site.email}}</a>
       </p>
     </div>
   </div>

@@ -254,11 +254,11 @@ function ogCard() {
 
   // tagline
   drawText(c, 'YOUR THOUGHT. OUR DESIGN.', 88, 404, { scale: 3.2, color: PAPER, tracking: 1.4 });
-  drawText(c, 'SAIDAPET, CHENNAI  ·  22 YEARS IN BUSINESS', 88, 456, { scale: 2.2, color: MUTED, tracking: 1.4 });
+  drawText(c, 'SAIDAPET, CHENNAI  ·  22+ YEARS OF EXPERIENCE', 88, 456, { scale: 2.2, color: MUTED, tracking: 1.4 });
 
   // contact baseline
   c.fill(88, 520, 1024, 1, BRASS_DIM);
-  drawText(c, '08460229951', 88, 540, { scale: 3, color: PAPER, tracking: 1.6 });
+  drawText(c, '8122220083', 88, 540, { scale: 3, color: PAPER, tracking: 1.6 });
   drawText(c, 'MODULAR KITCHENS · WARDROBES · FALSE CEILINGS', W - 88, 540, {
     scale: 2.2,
     color: MUTED,

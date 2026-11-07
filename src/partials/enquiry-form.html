@@ -22,10 +22,14 @@
       <label for="f-service">Service <span class="req" aria-hidden="true">*</span></label>
       <select id="f-service" name="service" required aria-invalid="false" aria-describedby="e-service">
         <option value="">Select a service</option>
-        <option value="Modular Kitchen">Modular Kitchen</option>
-        <option value="Wardrobe">Wardrobe</option>
-        <option value="False Ceiling">False Ceiling</option>
         <option value="Interior Works">Interior Works</option>
+        <option value="Modular Kitchen">Modular Kitchen</option>
+        <option value="Wardrobe & Loft">Wardrobe &amp; Loft</option>
+        <option value="TV Unit">TV Unit</option>
+        <option value="Pooja Unit">Pooja Unit</option>
+        <option value="Custom False Ceilings">Custom False Ceilings</option>
+        <option value="Wallpaper">Wallpaper</option>
+        <option value="Complete Interior Design Services">Complete Interior Design Services</option>
       </select>
       <p class="field__error" id="e-service" data-error-for="service" role="alert"></p>
     </div>
@@ -41,9 +45,10 @@
     <button class="btn btn--primary" type="submit">Send Enquiry</button>
     <p class="form__status" data-form-status role="status" hidden></p>
     <p class="form__note">
-      This demonstration form does not store anything on a server. When you press send, your enquiry is
+      This form does not store anything on a server. When you press send, your enquiry is
       prepared for WhatsApp so you can review it before it is sent. You can also call
-      <a href="{{site.phoneHref}}">{{site.phoneDisplay}}</a> directly.
+      <a href="{{site.phoneHref}}">{{site.phoneDisplay}}</a> or write to
+      <a href="mailto:{{site.email}}">{{site.email}}</a> directly.
     </p>
   </div>
 </form>

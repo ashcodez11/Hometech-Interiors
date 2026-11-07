@@ -1,6 +1,6 @@
 {
   "baseUrl": "https://www.hometechinteriors.in",
-  "contentDate": "2026-09-25",
+  "contentDate": "2026-09-26",
   "name": "Hometech Interiors",
   "legalName": "HOMETECH INTERIORS",
   "wordmark": "HOMETECH",
@@ -9,12 +9,12 @@
   "logoAlt": "Hometech Interiors logo",
   "tagline": "Your Thought. Our Design.",
   "taglineRaw": "Your Thought Our Design",
-  "blurb": "Interior solutions designed around the way you live.",
-  "yearsInBusiness": "22",
-  "phoneDisplay": "08460229951",
-  "phoneDial": "+918460229951",
-  "whatsapp": "918460229951",
-  "email": "",
+  "blurb": "Specializing in high-quality comprehensive interior design solutions. We transform spaces with innovative designs, premium materials, and exceptional craftsmanship.",
+  "yearsInBusiness": "22+",
+  "phoneDisplay": "8122220083",
+  "phoneDial": "+918122220083",
+  "whatsapp": "918122220083",
+  "email": "hometechinteriors.info@gmail.com",
   "address": {
     "street": "Near Aranganathan Subway, Kaveri Nagar",
     "locality": "Saidapet",
@@ -39,14 +39,13 @@
     "handle": "@hometechinteriorschennai",
     "url": "https://www.instagram.com/hometechinteriorschennai/"
   },
-  "justdial": {
-    "url": "https://www.justdial.com/Chennai/Hometech-Interiors-Near-Aranganathan-Subway-Kaveri-Nagar-Saidapet/044PXX44-XX44-121011112828-G2R6_BZDET",
-    "rating": "3.8",
-    "ratingCount": "17"
+  "youtube": {
+    "handle": "@hometechinteriorschennai",
+    "url": "https://youtube.com/@hometechinteriorschennai?si=1u6TKQ8LB3qB2-wL"
   },
   "categories": ["Interior Decorators", "False Ceiling Contractors"],
   "ogImage": "assets/img/og-hometech-interiors.png",
-  "ogImageAlt": "Hometech Interiors — interior design and interior works in Saidapet, Chennai",
-  "themeColor": "#0B1622",
+  "ogImageAlt": "Hometech Interiors — luxury interior designers in Chennai for kitchens, wardrobes and complete interiors",
+  "themeColor": "#26372F",
   "locale": "en_IN"
 }

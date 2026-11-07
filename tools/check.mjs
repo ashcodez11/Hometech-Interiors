@@ -114,7 +114,11 @@ for (const file of files) {
     /\bguaranteed (?:ranking|leads|traffic|first page)\b/i,
     /\b(?:we are|we're) the (?:best|leading|no\.? ?1)\b/i,
     /\b(?:5|4\.9|4\.8)\s*(?:\/5|stars?)\b/i,
-    /\bsince 19\d\d\b/i
+    /\bsince 19\d\d\b/i,
+    /08460229951/,
+    /918460229951/,
+    /3\.8\s*\/\s*5/,
+    /17 ratings?/
   ];
   for (const pattern of banned) {
     const hit = pattern.exec(html);

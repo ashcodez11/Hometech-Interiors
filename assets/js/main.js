@@ -127,6 +127,38 @@
     });
   }
 
+  /* ------------------------------------------------------------ hero film */
+
+  var heroVideo = $('#hero-video');
+
+  if (heroVideo) {
+    if (reduceMotion) {
+      // Hold the poster still rather than looping a moving film.
+      heroVideo.removeAttribute('autoplay');
+      heroVideo.pause();
+    } else {
+      var heroScreen = heroVideo.closest('.hero__screen');
+
+      // Autoplay can be refused (battery saver, data saving). The poster is a
+      // complete, finished-kitchen image, so the hero simply keeps it.
+      var heroPlay = heroVideo.play();
+      if (heroPlay && typeof heroPlay.catch === 'function') {
+        heroPlay.catch(function () {});
+      }
+
+      if (heroScreen) {
+        // Dim the film for a beat at the loop seam so the restart reads as a
+        // fade rather than a hard cut.
+        heroVideo.addEventListener('timeupdate', function () {
+          var duration = heroVideo.duration;
+          if (!duration || !isFinite(duration)) return;
+          var nearEnd = heroVideo.currentTime > 0.4 && duration - heroVideo.currentTime < 0.45;
+          heroScreen.classList.toggle('is-looping', nearEnd);
+        });
+      }
+    }
+  }
+
   /* -------------------------------------------------------- scroll reveal */
 
   var revealTargets = $$('[data-reveal]');
@@ -373,7 +405,7 @@
             if (status) {
               status.hidden = false;
               status.textContent =
-                'We could not send that just now. Please call or WhatsApp us on 08460229951 and we will help right away.';
+                'We could not send that just now. Please call or WhatsApp us on 8122220083 and we will help right away.';
             }
           });
         return;
@@ -388,8 +420,8 @@
         status.innerHTML =
           '<strong>Your enquiry is ready to send.</strong><br>' +
           'Tap “Continue in WhatsApp” to send it to Hometech Interiors, or call ' +
-          '<a href="tel:+918460229951">08460229951</a> directly. ' +
-          'This demo stores nothing on a server.';
+          '<a href="tel:+918122220083">8122220083</a> directly. ' +
+          'This website stores nothing on a server.';
       }
       if (number) {
         window.open('https://wa.me/' + number + '?text=' + encodeURIComponent(text), '_blank', 'noopener');

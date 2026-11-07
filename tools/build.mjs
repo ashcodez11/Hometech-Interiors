@@ -108,10 +108,14 @@ function frontMatter(raw, label) {
 /* ---------------------------------------------------------- structured data */
 
 const services = [
+  { name: 'Interior Works', url: 'interior-works-chennai.html' },
   { name: 'Modular Kitchen', url: 'modular-kitchen-chennai.html' },
-  { name: 'Wardrobe Interiors', url: 'wardrobe-design-chennai.html' },
-  { name: 'False Ceiling', url: 'false-ceiling-chennai.html' },
-  { name: 'Interior Works', url: 'interior-works-chennai.html' }
+  { name: 'Wardrobe & Loft', url: 'wardrobe-design-chennai.html' },
+  { name: 'TV Unit', url: 'services.html#tv-unit' },
+  { name: 'Pooja Unit', url: 'services.html#pooja-unit' },
+  { name: 'Custom False Ceilings', url: 'false-ceiling-chennai.html' },
+  { name: 'Wallpaper', url: 'services.html#wallpaper' },
+  { name: 'Complete Interior Design Services', url: 'services.html#complete-interiors' }
 ];
 
 function localBusiness() {
@@ -122,7 +126,7 @@ function localBusiness() {
     alternateName: site.legalName,
     slogan: site.tagline,
     description:
-      'Interior decorators and false ceiling contractors in Saidapet, Chennai. Modular kitchens, wardrobes, false ceilings and interior works — 22 years in business.',
+      'Hometech Interiors, Chennai — specializing in high-quality comprehensive interior design solutions with 22+ years of experience. Modular kitchens, wardrobes, false ceilings and complete interiors.',
     url: abs('/'),
     telephone: phoneDial,
     image: abs(site.ogImage),
@@ -134,7 +138,7 @@ function localBusiness() {
       addressCountry: 'IN'
     },
     areaServed: site.address.areaServed.map((name) => ({ '@type': 'Place', name })),
-    knowsAbout: ['Modular kitchen interiors', 'Wardrobe design', 'False ceiling installation', 'Interior works'],
+    knowsAbout: ['Modular kitchen Chennai', 'Wardrobe and loft Chennai', 'False ceiling Chennai', 'TV unit interiors', 'Pooja unit interiors', 'Wallpaper interiors', 'Complete interior design Chennai', 'Interior works Chennai'],
     contactPoint: [
       {
         '@type': 'ContactPoint',
@@ -152,7 +156,7 @@ function localBusiness() {
         itemOffered: { '@type': 'Service', name: s.name, url: abs(s.url) }
       }))
     },
-    sameAs: [site.instagram.url, site.justdial.url]
+    sameAs: [site.instagram.url, site.youtube.url]
   };
 }
 

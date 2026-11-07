@@ -7,51 +7,53 @@
 /* ------------------------------------------------------------------ tokens */
 
 :root {
-  /* Warm off-whites & soft greys */
-  --paper: #faf9f6;
-  --paper-2: #f3f1ec;
-  --paper-3: #eae6de;
-  --sand: #e2dcd0;
-  --sand-deep: #cfc7b6;
+  /* ---- Contemporary Nature — Forest Green, Limestone & Walnut */
+  --forest: #26372F;
+  --limestone: #F2EEE5;
+  --eucalyptus: #78866C;
+  --walnut: #80583E;
+  --natural-oak: #C4AE8E;
+  --deep-charcoal: #302F2A;
+  --warm-white: #FFFCF7;
 
-  /* Deep navy / charcoal — taken from the Hometech logo */
-  --ink: #0b1622;
-  --ink-2: #111e2b;
-  --ink-3: #1a2c3d;
-  --charcoal: #22323f;
+  /* Surface aliases */
+  --paper: var(--limestone);
+  --paper-2: var(--limestone);
+  --paper-3: var(--natural-oak);
+
+  /* Dark surfaces */
+  --ink: var(--forest);
+  --ink-2: var(--deep-charcoal);
+  --ink-3: var(--deep-charcoal);
+  --charcoal: var(--deep-charcoal);
 
   /* Text */
-  --text: #17202a;
-  --text-soft: #4a5766;
-  --muted: #66737f;
-  --text-on-dark: #f2efe8;
-  --text-on-dark-soft: #a9b4c0;
+  --text: var(--forest);
+  --text-soft: var(--deep-charcoal);
+  --muted: var(--eucalyptus);
+  --text-on-dark: var(--warm-white);
+  --text-on-dark-soft: var(--limestone);
 
-  /* Champagne gold accent.
-     --brass      surfaces, rules, button fills (dark text on top)
-     --brass-deep gold *text* on light backgrounds (contrast-safe)
-     --brass-soft gold text on navy backgrounds */
-  --brass: #c6a15b;
-  --brass-deep: #8a6524;
-  --brass-soft: #e2cd9e;
-  --brass-wash: rgba(198, 161, 91, 0.14);
+  /* Accents */
+  --brass: var(--eucalyptus);
+  --brass-deep: var(--walnut);
+  --brass-soft: var(--natural-oak);
+  --brass-wash: rgba(126, 134, 108, 0.14);
 
   /* Lines & surfaces */
-  --line: rgba(11, 22, 34, 0.12);
-  --line-soft: rgba(11, 22, 34, 0.07);
-  --line-dark: rgba(242, 239, 232, 0.16);
-  --shadow-sm: 0 1px 2px rgba(11, 22, 34, 0.04), 0 8px 24px -18px rgba(11, 22, 34, 0.35);
-  --shadow-md: 0 2px 4px rgba(11, 22, 34, 0.05), 0 24px 48px -32px rgba(11, 22, 34, 0.45);
-  --shadow-lg: 0 40px 80px -48px rgba(11, 22, 34, 0.55);
+  --line: rgba(38, 55, 47, 0.12);
+  --line-soft: rgba(38, 55, 47, 0.07);
+  --line-dark: rgba(242, 238, 229, 0.16);
+  --shadow-sm: 0 1px 2px rgba(38, 55, 47, 0.04), 0 8px 24px -18px rgba(38, 55, 47, 0.35);
+  --shadow-md: 0 2px 4px rgba(38, 55, 47, 0.05), 0 24px 48px -32px rgba(38, 55, 47, 0.45);
+  --shadow-lg: 0 40px 80px -48px rgba(38, 55, 47, 0.55);
 
-  /* Type — DM Serif Display for headlines, Cormorant Garamond for italic
-     accents, Inter for everything functional. Every stack ends in a widely
-     available fallback so the demo still looks considered offline. */
-  --font-display: "DM Serif Display", "Playfair Display", "Iowan Old Style", Palatino,
+  /* ---- Typography: Cormorant Garamond headings, Manrope body */
+  --font-display: "Cormorant Garamond", "Playfair Display", "Iowan Old Style", Palatino,
     Palatino Linotype, "Book Antiqua", Georgia, "Times New Roman", serif;
   --font-accent: "Cormorant Garamond", "Playfair Display", "Iowan Old Style", Palatino, Georgia,
     "Times New Roman", serif;
-  --font-sans: Inter, Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  --font-sans: Manrope, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 
   --fs-display: clamp(2.4rem, 1.45rem + 4.6vw, 5.5rem);
@@ -251,27 +253,27 @@ hr {
 }
 
 .section--paper2 {
-  background: var(--paper-2);
+  background: var(--limestone);
 }
 
 .section--paper3 {
-  background: linear-gradient(180deg, var(--paper) 0%, var(--paper-2) 100%);
+  background: linear-gradient(180deg, var(--limestone) 0%, var(--limestone) 100%);
 }
 
 .section--ink {
-  background: var(--ink);
-  color: var(--text-on-dark);
+  background: var(--forest);
+  color: var(--warm-white);
 }
 
 .section--ink h2,
 .section--ink h3 {
-  color: var(--text-on-dark);
+  color: var(--warm-white);
 }
 
 .section--ink .lede,
 .section--ink .eyebrow,
 .section--ink p {
-  color: var(--text-on-dark-soft);
+  color: var(--limestone);
 }
 
 .section--hairline-top {
@@ -358,9 +360,9 @@ hr {
 /* ------------------------------------------------------------------ buttons */
 
 .btn {
-  --btn-bg: var(--ink);
-  --btn-fg: var(--text-on-dark);
-  --btn-bd: var(--ink);
+  --btn-bg: var(--forest);
+  --btn-fg: var(--warm-white);
+  --btn-bd: var(--forest);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -370,7 +372,7 @@ hr {
   background: var(--btn-bg);
   color: var(--btn-fg);
   border: 1px solid var(--btn-bd);
-  border-radius: var(--radius);
+  border-radius: 2px;
   font-family: var(--font-sans);
   font-size: 0.8125rem;
   font-weight: 600;
@@ -398,62 +400,62 @@ hr {
 }
 
 .btn--primary {
-  --btn-bg: var(--brass);
-  --btn-bd: var(--brass);
-  --btn-fg: var(--ink);
+  --btn-bg: var(--forest);
+  --btn-bd: var(--forest);
+  --btn-fg: var(--warm-white);
 }
 
 .btn--primary:hover {
-  --btn-bg: var(--brass-soft);
-  --btn-bd: var(--brass-soft);
+  --btn-bg: var(--walnut);
+  --btn-bd: var(--walnut);
 }
 
 .btn--ink {
-  --btn-bg: var(--ink);
-  --btn-bd: var(--ink);
-  --btn-fg: var(--text-on-dark);
+  --btn-bg: var(--forest);
+  --btn-bd: var(--forest);
+  --btn-fg: var(--warm-white);
 }
 
 .btn--ink:hover {
-  --btn-bg: var(--brass);
-  --btn-bd: var(--brass);
-  --btn-fg: var(--ink);
+  --btn-bg: var(--walnut);
+  --btn-bd: var(--walnut);
+  --btn-fg: var(--warm-white);
 }
 
 .btn--ghost {
   --btn-bg: transparent;
-  --btn-bd: rgba(11, 22, 34, 0.28);
-  --btn-fg: var(--ink);
+  --btn-bd: rgba(41, 35, 31, 0.28);
+  --btn-fg: var(--forest);
 }
 
 .btn--ghost:hover {
-  --btn-bg: var(--ink);
-  --btn-bd: var(--ink);
-  --btn-fg: var(--text-on-dark);
+  --btn-bg: var(--forest);
+  --btn-bd: var(--forest);
+  --btn-fg: var(--warm-white);
 }
 
 .btn--ghost-light {
-  --btn-bg: rgba(250, 249, 246, 0.04);
-  --btn-bd: rgba(242, 239, 232, 0.4);
-  --btn-fg: var(--text-on-dark);
+  --btn-bg: rgba(245, 240, 231, 0.06);
+  --btn-bd: rgba(245, 240, 231, 0.4);
+  --btn-fg: var(--warm-white);
 }
 
 .btn--ghost-light:hover {
-  --btn-bg: var(--paper);
-  --btn-bd: var(--paper);
-  --btn-fg: var(--ink);
+  --btn-bg: var(--limestone);
+  --btn-bd: var(--limestone);
+  --btn-fg: var(--forest);
 }
 
 .btn--white {
-  --btn-bg: var(--paper);
-  --btn-bd: var(--paper);
-  --btn-fg: var(--ink);
+  --btn-bg: var(--limestone);
+  --btn-bd: var(--limestone);
+  --btn-fg: var(--forest);
 }
 
 .btn--white:hover {
-  --btn-bg: var(--brass);
-  --btn-bd: var(--brass);
-  --btn-fg: var(--ink);
+  --btn-bg: var(--eucalyptus);
+  --btn-bd: var(--eucalyptus);
+  --btn-fg: var(--forest);
 }
 
 .btn--block {
@@ -522,6 +524,7 @@ hr {
   inset: 0 0 auto 0;
   z-index: 120;
   padding-block: clamp(0.85rem, 0.6rem + 0.9vw, 1.35rem);
+  background: transparent;
   transition: background 0.35s var(--ease), box-shadow 0.35s var(--ease), padding 0.35s var(--ease);
 }
 
@@ -533,7 +536,7 @@ hr {
 }
 
 .site-header.is-stuck {
-  background: rgba(250, 249, 246, 0.94);
+  background: rgba(245, 240, 231, 0.94);
   backdrop-filter: saturate(160%) blur(12px);
   border-bottom: 1px solid var(--line);
   padding-block: 0.55rem;
@@ -541,26 +544,50 @@ hr {
 
 .site-header.is-stuck .brand,
 .site-header.is-stuck .nav-link {
-  color: var(--ink);
+  color: var(--forest);
 }
 
 .site-header.is-stuck .brand__mark {
-  color: var(--brass-deep);
+  color: var(--walnut);
 }
 
 .site-header.is-stuck .burger__line {
-  background: var(--ink);
+  background: var(--forest);
 }
 
 .site-header.is-stuck .header-cta--call {
-  color: var(--ink);
+  color: var(--forest);
 }
 
 .site-header.is-stuck .header-cta--primary {
-  --btn-bg: var(--brass);
-  --btn-bd: var(--brass);
-  --btn-fg: var(--ink);
+  --btn-bg: var(--walnut);
+  --btn-bd: var(--walnut);
+  --btn-fg: var(--warm-white);
 }
+
+/* Transparent header over hero: light text on video */
+.site-header:not(.is-stuck) .brand,
+.site-header:not(.is-stuck) .nav-link,
+.site-header:not(.is-stuck) .header-cta--call {
+  color: var(--warm-white);
+}
+
+.site-header:not(.is-stuck) .nav-link[aria-current="page"] {
+  color: var(--eucalyptus);
+}
+
+.site-header:not(.is-stuck) .burger__line {
+  background: var(--warm-white);
+}
+
+.site-header:not(.is-stuck) .header-cta--primary {
+  --btn-bg: var(--walnut);
+  --btn-bd: var(--walnut);
+  --btn-fg: var(--warm-white);
+}
+
+/* The home hero is a dark cinematic film, so the transparent header there keeps
+   the same light-on-dark treatment as the other page mastheads. */
 
 /* Brand */
 
@@ -867,56 +894,255 @@ body.is-locked {
 
 .hero {
   position: relative;
-  background: var(--ink);
-  color: var(--text-on-dark);
-  padding-top: clamp(7.5rem, 5rem + 9vw, 11rem);
-  padding-bottom: clamp(3rem, 2rem + 4vw, 5.5rem);
+  width: 100%;
   overflow: hidden;
+  background: var(--limestone);
+  color: var(--text);
 }
 
-.hero__media {
+/* Home hero — the original kitchen film is the media layer and the complete
+   editorial copy plus both CTA buttons are layered directly on top of it.
+   The film keeps its whole 16:9 frame (object-fit: contain) and the hero is at
+   least one full 16:9 screen tall, growing taller when the overlay needs room
+   so the video is never cropped, zoomed or stretched to fit. */
+.hero--cinema {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  min-height: 56.25vw; /* one complete 16:9 screen at viewport width */
+  padding: 0;
+  overflow: hidden;
+  background: var(--forest);
+  color: var(--warm-white);
+}
+
+/* The film screen is the background layer. */
+.hero__screen {
   position: absolute;
   inset: 0;
   z-index: 0;
+  margin: 0;
+  overflow: hidden;
+  background: var(--forest);
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
 }
 
-.hero__media img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.95;
-  animation: heroDrift 26s var(--ease) forwards;
-}
-
-@keyframes heroDrift {
-  from {
-    transform: scale(1.06);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-
-/* The scrim keeps the headline legible over a light architectural drawing
-   without burying the artwork itself: dark at the left where the type sits,
-   progressively clearer to the right where the kitchen elevation reads. */
-.hero__media::after {
-  content: "";
+.hero__poster,
+.hero__video {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-      100deg,
-      rgba(11, 22, 34, 0.96) 0%,
-      rgba(11, 22, 34, 0.85) 28%,
-      rgba(11, 22, 34, 0.34) 72%,
-      rgba(11, 22, 34, 0.6) 100%
-    ),
-    linear-gradient(180deg, rgba(11, 22, 34, 0.68) 0%, rgba(11, 22, 34, 0.08) 42%, rgba(11, 22, 34, 0.9) 100%);
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  object-fit: contain; /* never crop, stretch or zoom the original frame */
+  object-position: center;
+  background: transparent; /* the forest letterbox shows through */
 }
 
-.hero__inner {
-  position: relative;
+.hero__poster {
+  z-index: 0;
+}
+
+.hero__video {
   z-index: 1;
+  animation: heroFilmIn 1.2s var(--ease) both;
+  transition: filter 0.5s linear;
+}
+
+/* A gentle dim through the loop seam instead of a hard cut. */
+.hero__screen.is-looping .hero__video {
+  filter: brightness(0.88) saturate(0.96);
+}
+
+/* Cinematic scrim — a soft, centred pool of shade that lifts the typography
+   just enough for contrast and falls away toward every edge, so the kitchen
+   stays visible around and behind the copy. */
+.hero__scrim {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background:
+    radial-gradient(
+      118% 86% at 50% 50%,
+      rgba(17, 25, 21, 0.42) 0%,
+      rgba(17, 25, 21, 0.3) 34%,
+      rgba(17, 25, 21, 0.16) 58%,
+      rgba(17, 25, 21, 0.05) 80%,
+      rgba(17, 25, 21, 0) 100%
+    ),
+    linear-gradient(
+      180deg,
+      /* a whisper of shade under the transparent header keeps its light type
+         legible without darkening the kitchen itself */
+      rgba(17, 25, 21, 0.34) 0%,
+      rgba(17, 25, 21, 0.1) 18%,
+      rgba(17, 25, 21, 0.05) 42%,
+      rgba(17, 25, 21, 0.05) 70%,
+      rgba(17, 25, 21, 0.28) 100%
+    );
+}
+
+@keyframes heroFilmIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* The copy layer — a centred editorial composition held in the film's safe
+   area, always above the media and the scrim. Children space themselves with
+   explicit margins rather than one uniform gap, so the rhythm reads as
+   eyebrow — generous — headline — comfortable — tagline — blurb — generous —
+   CTAs, exactly as art-directed. */
+.hero__masthead {
+  position: relative;
+  z-index: 3;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  text-align: center;
+  padding-top: clamp(6rem, 4rem + 6vw, 8.5rem);
+  padding-bottom: clamp(3rem, 2rem + 4vw, 5rem);
+  animation: heroRise 0.9s var(--ease) both;
+}
+
+@keyframes heroRise {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.hero__eyebrow-rule {
+  display: inline-block;
+  width: clamp(26px, 3.4vw, 44px);
+  height: 1px;
+  background: currentColor;
+  opacity: 0.6;
+  flex: none;
+}
+
+.hero--cinema .hero__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: clamp(0.7rem, 0.55rem + 0.5vw, 1rem);
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: clamp(0.625rem, 0.58rem + 0.16vw, 0.72rem);
+  font-weight: 500;
+  letter-spacing: 0.34em;
+  color: var(--natural-oak);
+  text-shadow: 0 1px 12px rgba(17, 25, 21, 0.55);
+}
+
+/* The mirror hairline closes the label so the centred composition stays
+   symmetrical — the twin of the leading rule in the markup. */
+.hero--cinema .hero__eyebrow::after {
+  content: "";
+  display: inline-block;
+  width: clamp(26px, 3.4vw, 44px);
+  height: 1px;
+  background: currentColor;
+  opacity: 0.6;
+  flex: none;
+}
+
+/* The headline is the dominant element: a generous gap lifts it off the
+   eyebrow, a roomier leading keeps the two editorial lines from crowding,
+   and a balanced measure keeps both lines optically even. */
+.hero--cinema .hero__title {
+  display: block;
+  margin: clamp(1.15rem, 0.85rem + 1.4vw, 2.1rem) 0 0;
+  max-width: 18ch;
+  font-size: clamp(2.5rem, 1.4rem + 4.6vw, 5.5rem);
+  line-height: 1.06;
+  letter-spacing: -0.012em;
+  color: var(--warm-white);
+  text-shadow: 0 2px 28px rgba(17, 25, 21, 0.5);
+}
+
+.hero--cinema .hero__title span {
+  display: block;
+}
+
+.hero--cinema .hero__title-em {
+  font-family: var(--font-accent);
+  font-style: italic;
+  color: var(--natural-oak);
+}
+
+/* Supporting lines sit closer to one another than to the headline, so the
+   tagline and description read as a single refined unit beneath the title. */
+.hero--cinema .hero__tagline {
+  margin: clamp(0.85rem, 0.6rem + 0.9vw, 1.35rem) 0 0;
+  max-width: 34ch;
+  font-family: var(--font-sans);
+  font-style: normal;
+  font-size: clamp(1.02rem, 0.94rem + 0.42vw, 1.25rem);
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.005em;
+  color: rgba(242, 238, 229, 0.94);
+  text-shadow: 0 1px 16px rgba(17, 25, 21, 0.55);
+}
+
+.hero--cinema .hero__blurb {
+  margin: clamp(0.7rem, 0.5rem + 0.7vw, 1rem) 0 0;
+  max-width: 52ch;
+  font-size: clamp(0.9rem, 0.86rem + 0.26vw, 1rem);
+  line-height: 1.68;
+  color: rgba(242, 238, 229, 0.82);
+  text-shadow: 0 1px 14px rgba(17, 25, 21, 0.55);
+}
+
+/* A generous gap, then the paired CTAs held on one centred axis. */
+.hero--cinema .hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(0.85rem, 0.7rem + 0.6vw, 1.5rem);
+  margin: clamp(1.75rem, 1.2rem + 1.8vw, 2.8rem) 0 0;
+}
+
+/* CTA treatment over the film — limestone primary, light ghost secondary. */
+.hero--cinema .btn--primary {
+  --btn-bg: var(--limestone);
+  --btn-bd: var(--limestone);
+  --btn-fg: var(--forest);
+}
+
+.hero--cinema .btn--primary:hover {
+  --btn-bg: var(--eucalyptus);
+  --btn-bd: var(--eucalyptus);
+  --btn-fg: var(--forest);
+}
+
+.hero--cinema .btn--ghost {
+  --btn-bg: rgba(242, 238, 229, 0.07);
+  --btn-bd: rgba(242, 238, 229, 0.55);
+  --btn-fg: var(--warm-white);
+}
+
+.hero--cinema .btn--ghost:hover {
+  --btn-bg: var(--limestone);
+  --btn-bd: var(--limestone);
+  --btn-fg: var(--forest);
 }
 
 .hero__eyebrow {
@@ -927,7 +1153,7 @@ body.is-locked {
   font-weight: 600;
   letter-spacing: 0.26em;
   text-transform: uppercase;
-  color: var(--brass-soft);
+  color: var(--walnut);
   margin-bottom: 1.4rem;
 }
 
@@ -941,7 +1167,7 @@ body.is-locked {
 .hero__title {
   font-size: var(--fs-display);
   line-height: 0.98;
-  letter-spacing: 0.005em;
+  letter-spacing: -0.01em;
   margin-bottom: 1.1rem;
 }
 
@@ -952,7 +1178,7 @@ body.is-locked {
 .hero__title-em {
   font-family: var(--font-accent);
   font-style: italic;
-  color: var(--brass-soft);
+  color: var(--walnut);
 }
 
 .hero__tagline {
@@ -960,7 +1186,7 @@ body.is-locked {
   font-style: italic;
   font-size: clamp(1.2rem, 1rem + 1.2vw, 1.85rem);
   line-height: 1.3;
-  color: var(--text-on-dark);
+  color: var(--text-soft);
   margin: 0 0 0.9rem;
   max-width: 30ch;
 }
@@ -968,7 +1194,7 @@ body.is-locked {
 .hero__blurb {
   font-size: var(--fs-lead);
   line-height: 1.55;
-  color: var(--text-on-dark-soft);
+  color: var(--text-soft);
   max-width: 44ch;
   margin: 0 0 2rem;
 }
@@ -2115,8 +2341,8 @@ summary.faq__q {
 
 .cta-band {
   position: relative;
-  background: var(--ink);
-  color: var(--text-on-dark);
+  background: var(--forest);
+  color: var(--warm-white);
   overflow: hidden;
 }
 
@@ -2144,10 +2370,11 @@ summary.faq__q {
 .cta-band h2 {
   font-size: clamp(1.8rem, 1.3rem + 2.8vw, 3.4rem);
   margin-bottom: 1rem;
+  color: var(--warm-white);
 }
 
 .cta-band .lede {
-  color: var(--text-on-dark-soft);
+  color: var(--limestone);
   max-width: 46ch;
 }
 
@@ -2163,18 +2390,18 @@ summary.faq__q {
 
 .cta-band__meta {
   font-size: var(--fs-small);
-  color: var(--text-on-dark-soft);
+  color: var(--limestone);
 }
 
 .cta-band__meta a {
-  color: var(--text-on-dark);
+  color: var(--warm-white);
 }
 
 /* ------------------------------------------------------------------- footer */
 
 .site-footer {
-  background: var(--ink-2);
-  color: var(--text-on-dark-soft);
+  background: var(--forest);
+  color: var(--limestone);
   padding-top: clamp(2.75rem, 2rem + 3vw, 4.5rem);
   padding-bottom: 1.75rem;
   font-size: var(--fs-small);
@@ -2188,7 +2415,7 @@ summary.faq__q {
 }
 
 .footer-brand .brand {
-  color: var(--text-on-dark);
+  color: var(--warm-white);
   margin-bottom: 0.9rem;
 }
 
@@ -2203,7 +2430,7 @@ summary.faq__q {
   font-weight: 600;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--brass-soft);
+  color: var(--eucalyptus);
   margin: 0 0 1rem;
 }
 
@@ -2222,10 +2449,60 @@ summary.faq__q {
 .footer-list a {
   display: inline-block;
   padding: 0.2rem 0;
+  overflow-wrap: anywhere;
+  color: var(--limestone);
 }
 
 .footer-list a:hover {
-  color: var(--text-on-dark);
+  color: var(--eucalyptus);
+}
+
+/* Social icons — recognizable brand glyphs used instead of application names.
+   Shared by the footer and the mobile drawer (both on dark grounds). */
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social-links li {
+  margin: 0;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(182, 154, 114, 0.45);
+  border-radius: 50%;
+  color: var(--limestone);
+  transition: color 0.25s var(--ease), background-color 0.25s var(--ease),
+    border-color 0.25s var(--ease), transform 0.25s var(--ease);
+}
+
+.social-links a:hover,
+.social-links a:focus-visible {
+  background: var(--eucalyptus);
+  border-color: var(--eucalyptus);
+  color: var(--forest);
+  transform: translateY(-2px);
+}
+
+.social-links svg {
+  display: block;
+  width: 18px;
+  height: 18px;
+}
+
+.social-links a:focus-visible {
+  outline: 2px solid var(--eucalyptus);
+  outline-offset: 3px;
 }
 
 .footer-bottom {
@@ -2237,14 +2514,19 @@ summary.faq__q {
 
 .footer-bottom p {
   margin: 0;
+  color: var(--limestone);
+}
+
+.footer-bottom a {
+  color: var(--warm-white);
 }
 
 .footer-bottom a:hover {
-  color: var(--text-on-dark);
+  color: var(--eucalyptus);
 }
 
 .footer-note {
-  color: rgba(169, 180, 192, 0.75);
+  color: rgba(232, 223, 209, 0.75);
   max-width: 70ch;
 }
 
@@ -2259,8 +2541,8 @@ summary.faq__q {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1px;
-  background: var(--line-dark);
-  border-top: 1px solid rgba(198, 161, 91, 0.45);
+  background: var(--forest);
+  border-top: 1px solid rgba(182, 154, 114, 0.45);
   padding-bottom: env(safe-area-inset-bottom);
 }
 
@@ -2272,8 +2554,8 @@ summary.faq__q {
   gap: 0.22rem;
   min-height: var(--bar-h);
   padding: 0.5rem 0.35rem;
-  background: var(--ink);
-  color: var(--text-on-dark);
+  background: var(--forest);
+  color: var(--limestone);
   font-size: 0.68rem;
   font-weight: 600;
   letter-spacing: 0.11em;
@@ -2284,12 +2566,12 @@ summary.faq__q {
 .action-bar__btn svg {
   width: 19px;
   height: 19px;
-  color: var(--brass-soft);
+  color: var(--eucalyptus);
 }
 
 .action-bar__btn--accent {
-  background: var(--brass);
-  color: var(--ink);
+  background: var(--walnut);
+  color: var(--warm-white);
 }
 
 .action-bar__btn--accent svg {
@@ -2297,7 +2579,7 @@ summary.faq__q {
 }
 
 .action-bar__btn:active {
-  background: var(--ink-3);
+  background: var(--deep-charcoal);
 }
 
 /* ------------------------------------------------------------------- motion */
@@ -2494,10 +2776,6 @@ summary.faq__q {
   body {
     padding-bottom: calc(var(--bar-h) + env(safe-area-inset-bottom));
   }
-
-  .hero {
-    padding-bottom: calc(clamp(3rem, 2rem + 4vw, 5.5rem));
-  }
 }
 
 /* ------------------------------------------------------------------- print */
@@ -2525,8 +2803,8 @@ summary.faq__q {
   border-radius: 50%;
   object-fit: cover;
   object-position: center;
-  border: 1px solid rgba(198, 161, 91, 0.45);
-  background: var(--ink);
+  border: 1px solid rgba(182, 154, 114, 0.45);
+  background: var(--forest);
 }
 
 .brand--lg .brand__logo {
@@ -2542,26 +2820,67 @@ summary.faq__q {
   font-size: 0.56rem;
 }
 
-/* On narrow screens the hero type spans the full width, so the scrim has to sit
-   a little heavier — but it still lets the artwork read through behind it. */
+/* Homepage hero on small screens: the centred copy stays layered over the
+   complete film frame and the hero grows taller so the overlay always has
+   room, while the scrim softens into a centred pool so it keeps the kitchen
+   visible through the forest letterbox band. */
 @media (max-width: 999px) {
-  .hero__media img {
-    opacity: 0.8;
+  .hero__masthead {
+    padding-top: clamp(5.5rem, 4.25rem + 5vw, 7rem);
+    padding-bottom: clamp(3.25rem, 2.25rem + 4vw, 4.5rem);
   }
 
-  .hero__media::after {
-    background: linear-gradient(
-        100deg,
-        rgba(11, 22, 34, 0.95) 0%,
-        rgba(11, 22, 34, 0.88) 46%,
-        rgba(11, 22, 34, 0.74) 100%
+  .hero--cinema .hero__title {
+    max-width: 16ch;
+    margin-top: clamp(1rem, 0.75rem + 1.2vw, 1.6rem);
+    font-size: clamp(2.05rem, 1.35rem + 3.6vw, 3.2rem);
+  }
+
+  .hero--cinema .hero__tagline {
+    max-width: 30ch;
+  }
+
+  .hero--cinema .hero__blurb {
+    max-width: 48ch;
+  }
+
+  .hero--cinema .hero__actions {
+    margin-top: clamp(1.5rem, 1.1rem + 1.5vw, 2.25rem);
+  }
+
+  /* On small screens the hero is taller than the film, so the shade pools
+     gently in the centre — over the film band the copy sits on — and fades
+     out toward the forest letterbox. Never a heavy wash over the kitchen. */
+  .hero__scrim {
+    background:
+      radial-gradient(
+        132% 60% at 50% 50%,
+        rgba(17, 25, 21, 0.5) 0%,
+        rgba(17, 25, 21, 0.36) 44%,
+        rgba(17, 25, 21, 0.16) 72%,
+        rgba(17, 25, 21, 0) 100%
       ),
       linear-gradient(
         180deg,
-        rgba(11, 22, 34, 0.78) 0%,
-        rgba(11, 22, 34, 0.3) 40%,
-        rgba(11, 22, 34, 0.94) 100%
+        rgba(17, 25, 21, 0.2) 0%,
+        rgba(17, 25, 21, 0.04) 28%,
+        rgba(17, 25, 21, 0.04) 72%,
+        rgba(17, 25, 21, 0.22) 100%
       );
+  }
+}
+
+/* Narrow phones: once the two CTAs can no longer sit comfortably side by side
+   they stack, evenly centred, rather than crowding the film. */
+@media (max-width: 520px) {
+  .hero--cinema .hero__actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: clamp(0.8rem, 0.65rem + 1vw, 1.1rem);
+  }
+
+  .hero--cinema .hero__actions .btn {
+    width: 100%;
   }
 }
 
@@ -2580,13 +2899,13 @@ summary.faq__q {
   flex: none;
   border-radius: 50%;
   object-fit: cover;
-  border: 1px solid rgba(198, 161, 91, 0.4);
+  border: 1px solid rgba(182, 154, 114, 0.4);
 }
 
 .about-seal p {
   margin: 0;
   font-size: var(--fs-small);
-  color: var(--text-on-dark-soft);
+  color: var(--limestone);
   max-width: 30ch;
 }
 
@@ -2596,7 +2915,7 @@ summary.faq__q {
   font-weight: 400;
   font-size: 1.05rem;
   letter-spacing: 0.06em;
-  color: var(--text-on-dark);
+  color: var(--warm-white);
 }
 
 /* ==========================================================================
@@ -2730,4 +3049,363 @@ summary.faq__q {
 .chip-row a:hover {
   border-color: var(--brass);
   color: var(--brass-soft);
+}
+
+/* ==========================================================================
+   Luxury / premium design pass — editorial typography, hero, services index
+   Appended as an override layer so the base responsive system stays intact.
+   ========================================================================== */
+
+h1,
+h2,
+h3 {
+  letter-spacing: -0.01em;
+  font-weight: 500;
+}
+
+.hero__title {
+  letter-spacing: 0;
+  font-weight: 500;
+}
+
+/* Metadata (numbers, labels) in quiet monospace where it suits the studio feel */
+.svc-row__num,
+.hero__stat strong,
+.legacy__number {
+  font-family: var(--font-display);
+}
+
+.hero__eyebrow,
+.hero__meta,
+.cta-band__list span {
+  letter-spacing: 0.22em;
+}
+
+.hero__meta {
+  display: flex;
+  align-items: center;
+  gap: clamp(1rem, 0.7rem + 2vw, 2.25rem);
+  padding-top: clamp(1.75rem, 1.2rem + 2vw, 2.75rem);
+  border-top: 1px solid var(--line-dark);
+}
+
+.hero__stat {
+  display: flex;
+  align-items: baseline;
+  gap: 0.7rem;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.hero__stat strong {
+  font-size: clamp(1.9rem, 1.4rem + 2.4vw, 3rem);
+  font-weight: 500;
+  line-height: 1;
+  color: var(--brass-soft);
+}
+
+.hero__stat span {
+  font-size: var(--fs-eyebrow);
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--text-on-dark);
+}
+
+.hero__meta-div {
+  width: 1px;
+  align-self: stretch;
+  background: var(--line-dark);
+  flex: none;
+}
+
+.hero__locale {
+  margin: 0;
+  font-size: var(--fs-eyebrow);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--text-on-dark-soft);
+  line-height: 2;
+  max-width: none;
+}
+
+/* ---- Experience section: architectural whitespace */
+.section--experience {
+  background: var(--paper);
+}
+
+.legacy--editorial .legacy__number {
+  font-size: clamp(5rem, 2.75rem + 12vw, 10.5rem);
+}
+
+.text-link--inline {
+  padding-bottom: 0.15rem;
+}
+
+/* ---- Services index: numbered editorial rows */
+.svc-index {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--line);
+}
+
+.svc-index li {
+  margin: 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.svc-row {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 0.75rem 1.25rem;
+  align-items: center;
+  padding: clamp(1.15rem, 0.9rem + 1.4vw, 1.9rem) 0;
+  transition: padding 0.35s var(--ease);
+}
+
+.svc-row__num {
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  color: var(--brass-deep);
+  min-width: 2.2rem;
+}
+
+.svc-row__title {
+  display: block;
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 1.1rem + 1.4vw, 2rem);
+  font-weight: 500;
+  line-height: 1.15;
+  color: var(--text);
+  transition: color 0.3s var(--ease);
+}
+
+.svc-row__desc {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: var(--fs-small);
+  color: var(--text-soft);
+  max-width: 52ch;
+}
+
+.svc-row__media {
+  display: none;
+  width: 148px;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line);
+  background: var(--paper-3);
+  flex: none;
+}
+
+.svc-row__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.9s var(--ease);
+}
+
+.svc-row__arrow {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  color: var(--brass-deep);
+  opacity: 0;
+  transform: translateX(-8px);
+  transition: opacity 0.35s var(--ease), transform 0.35s var(--ease);
+}
+
+.svc-row:hover .svc-row__title {
+  color: var(--brass-deep);
+}
+
+.svc-row:hover .svc-row__media img {
+  transform: scale(1.06);
+}
+
+.svc-row:hover .svc-row__arrow,
+.svc-row:focus-visible .svc-row__arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.svc-row:focus-visible .svc-row__arrow {
+  opacity: 1;
+}
+
+/* Services index on a forest-green section */
+.section--ink .svc-index {
+  border-color: var(--line-dark);
+}
+
+.section--ink .svc-index li {
+  border-color: var(--line-dark);
+}
+
+.section--ink .svc-row__num {
+  color: var(--natural-oak);
+}
+
+.section--ink .svc-row__title {
+  color: var(--warm-white);
+}
+
+.section--ink .svc-row__desc {
+  color: var(--limestone);
+}
+
+.section--ink .svc-row__arrow {
+  color: var(--natural-oak);
+}
+
+.section--ink .svc-row__media {
+  border-color: var(--line-dark);
+}
+
+.section--ink .svc-row:hover .svc-row__title {
+  color: var(--natural-oak);
+}
+
+/* ---- About tagline */
+.about-tagline {
+  margin-top: 1.1rem;
+  font-family: var(--font-accent);
+  font-style: italic;
+  font-size: clamp(1.25rem, 1.05rem + 1vw, 1.7rem);
+  color: var(--brass-soft);
+}
+
+/* ---- CTA band: premium enquiry list */
+.cta-band__list {
+  list-style: none;
+  margin: 1.75rem 0 0;
+  padding: 0;
+  display: grid;
+  border-top: 1px solid var(--line-dark);
+}
+
+.cta-band__list li {
+  margin: 0;
+  border-bottom: 1px solid var(--line-dark);
+}
+
+.cta-band__list a {
+  display: grid;
+  grid-template-columns: 7rem 1fr;
+  gap: 0.5rem 1rem;
+  align-items: baseline;
+  padding: 0.85rem 0;
+}
+
+.cta-band__list span {
+  font-size: var(--fs-eyebrow);
+  text-transform: uppercase;
+  color: var(--brass-soft);
+}
+
+.cta-band__list strong {
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--text-on-dark);
+  overflow-wrap: anywhere;
+}
+
+.cta-band__list a:hover strong {
+  color: var(--brass-soft);
+}
+
+/* ---- Footer refinements */
+.footer-tagline {
+  font-family: var(--font-accent);
+  font-style: italic;
+  font-size: 1.25rem;
+  color: var(--text-on-dark);
+  margin-bottom: 0.75rem;
+}
+
+.footer-exp {
+  font-size: var(--fs-eyebrow);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--brass-soft);
+}
+
+/* ---- Small screens: keep the luxury calm, never clipped */
+@media (max-width: 560px) {
+  .hero__meta {
+    flex-wrap: wrap;
+    gap: 0.9rem;
+  }
+
+  .hero__meta-div {
+    display: none;
+  }
+
+  .svc-row {
+    grid-template-columns: auto 1fr;
+  }
+
+  .svc-row__arrow {
+    display: none;
+  }
+
+  .cta-band__list a {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+}
+
+@media (min-width: 561px) and (max-width: 859px) {
+  .svc-row__media {
+    display: block;
+    width: 120px;
+  }
+
+  .svc-row {
+    grid-template-columns: auto 1fr auto auto;
+  }
+}
+
+@media (min-width: 860px) {
+  .svc-row {
+    grid-template-columns: 4rem 1fr 148px 2rem;
+  }
+
+  .svc-row__media {
+    display: block;
+  }
+}
+
+/* ------------------------------------------------------------------ why choose */
+.why-title {
+  margin: clamp(1.75rem, 1.2rem + 2vw, 2.5rem) 0 1rem;
+  font-family: var(--font-display);
+  font-size: var(--fs-h3);
+  color: var(--warm-white);
+}
+
+.why-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.7rem;
+}
+
+.why-list li {
+  display: flex;
+  gap: 0.7rem;
+  align-items: baseline;
+  margin: 0;
+  font-size: var(--fs-small);
+  color: var(--limestone);
+}
+
+.why-list li::before {
+  content: "";
+  width: 18px;
+  height: 1px;
+  background: var(--natural-oak);
+  flex: none;
+  transform: translateY(-0.35rem);
 }

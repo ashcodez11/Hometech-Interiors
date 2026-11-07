@@ -1,0 +1,7 @@
+.vercel
+
+# Temporary local files
+.video-backup/
+_debug.html
+_debug2.html
+_poster-grab.html
