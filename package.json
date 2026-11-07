@@ -13,6 +13,6 @@
     "verify": "node tools/make-assets.mjs && node tools/build.mjs && node tools/check.mjs"
   },
   "engines": {
-    "node": ">=18"
+    "node": "24.x"
   }
 }
